@@ -1,0 +1,15 @@
+{
+    "questions":[
+        {
+            "id":1,
+            "title":"Write a program that print a pattern of numbers based on the value of n. The program should generate the following pattern:",
+            "link":"/images/qn1.png"
+        
+        },
+        {
+            "id":2,
+            "title":"Write a program that print a pattern of prime numbers based on the value of n. The program should generate the following pattern",
+            "link":"/images/qn2.png"
+        }
+    ]
+}

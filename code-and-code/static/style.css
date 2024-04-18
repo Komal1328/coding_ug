@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Horror Font', cursive;
+    background-image: url('../static/uiimages/one.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: wheat;
+    text-align: center;
+    padding-top: 50px;
+}
+h1 {
+    font-size: 40px;
+    font-family: 'Horror Font', cursive;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+input[type="submit"] {
+    padding: 10px 20px;
+    margin-top: 10%;
+    font-size: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Horror Font', cursive;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+input[type="submit"]:hover {
+    background-color: #7daf4c;
+}
+div{
+    width: 900px;
+    height: 100px;
+    backdrop-filter: blur(10px);
+    border: 2px solid black;
+    border-radius: 5%;
+    padding: 20px;
+    margin-left:300px;
+    margin-bottom: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'Horror Font', cursive;
+}

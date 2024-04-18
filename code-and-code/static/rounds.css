@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../static/uiimages/three.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+        h1 {
+            font-size: 40px;
+            font-family: 'Horror Font', cursive;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        #rounds {
+            display: flex;
+            flex-direction: row; /* Use flex-direction to stack elements vertically */
+            justify-content: center;
+            margin-top: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-top: 10%;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }    
+        .round{
+            margin: 0 10px;
+            width: 200px;
+            height: 100px;
+            backdrop-filter: blur(10px);
+            border: 2px solid black;
+            border-radius: 5%;
+            padding: 20px;
+            margin-left:10px;
+            margin-bottom: 15px;
+            margin-bottom: 15px;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif
+        }  
+        h2 {
+            font-size: 40px;
+            font-family: 'Horror Font', cursive;
+            color: whitesmoke;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        } 
+        #heading{
+            width: 900px;
+            margin: 0 10px;
+            height: 100px;
+            backdrop-filter: blur(10px);
+            border: 2px solid black;
+            border-radius: 5%;
+            padding: 20px;
+            margin-left:300px;
+            margin-bottom: 15px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-family: Arial, sans-serif
+        } 
+        p {
+            font-size: 20px;
+            font-family: 'Horror Font', cursive;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        } 
+        

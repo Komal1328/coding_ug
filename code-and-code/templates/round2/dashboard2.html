@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse Engineering Event</title>
+    <link rel="stylesheet" href="../static/dashboard2.css">
+</head>
+<body>
+    <div class="container">
+        <form  action="/logout2" method="POST">
+            <input class="logout-button" type="submit" value="Logout">
+        </form>
+
+        <h1>Congratulations on reaching Round 2!</h1>
+        <div class="team-name">{{ team_name }}</div>
+        
+        
+        
+        <div class="instructions">
+            <h2>Instructions:</h2>
+            <p>Welcome to the Reverse Engineering Event! In this round, you will be presented with various challenges that require you to analyze and understand existing systems, applications, or code.</p>
+            <p>Your task is to reverse engineer the given components, understand their functionality, and provide solutions or answers based on your analysis.</p>
+            <p>You may encounter tasks such as identifying vulnerabilities, analyzing algorithms, understanding protocols, or reverse engineering binary executables.</p>
+            <p>Be prepared to demonstrate your problem-solving skills, attention to detail, and ability to think creatively.</p>
+            <input type="checkbox" id="confirm" onchange="toggleStartButton()"> <!-- Checkbox to confirm understanding -->
+            <label for="confirm">I confirm that I have read and understood the instructions</label>
+            
+
+        </div>
+
+        <form action="/revengg2">
+            <input class="start-contest" type="submit" value="Start Reverse Engineering Contest">
+        </form>
+    </div>
+    <script>
+        function toggleStartButton() {
+            const startButton = document.querySelector('.start-contest');
+            const confirmCheckbox = document.querySelector('#confirm');
+            startButton.style.display = confirmCheckbox.checked ? 'block' : 'none';
+        }
+        </script>
+</body>
+</html>

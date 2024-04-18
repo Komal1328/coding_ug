@@ -1,0 +1,158 @@
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        background-image: url('../static/uiimages/three.jpg');
+        margin: 10%;
+        font-family: 'Horror Font', cursive;
+        padding: 5px;
+      }
+      h1 {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .team-name-full {
+        text-align: center;
+        font-size: 24px;
+        margin-top: 20px;
+        color: white;
+        font-family: 'Horror Font', cursive;
+      }
+      h3{
+        font-family: 'Horror Font', cursive;
+        color: white;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+      }
+      .logout-btn { /* Added */
+        position: relative;
+        bottom: 10px;
+        left: 10px;
+        background-color: green; /* Red color */
+        color: #fff;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: 'Horror Font', cursive;
+    }
+    
+      .question,
+      .editor {
+        width: 100%;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+      }
+      .editor {
+        padding: 0px;
+      }
+      label {
+        font-weight: bold;
+      }
+      input[type="text"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        resize: vertical;
+      }
+      textarea {
+        width: calc(100% - 16px);
+        margin-right: 16px;
+        border-top-left-radius: 0;
+      }
+      .code-container {
+        position: relative;
+        width: 100%;
+        display: flex;
+      }
+      .line-number.highlight {
+        background-color: #ffcc00; /* Adjusted highlight color for better visibility */
+      }
+
+      .line-numbers {
+        background-color: #f0f0f0;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        padding: 10px 0;
+        padding-right: 15px;
+        overflow-y: scroll;
+        display: inline-block;
+        width: 40px;
+        box-sizing: border-box;
+        text-align: right;
+        font-family: monospace;
+        line-height: 15px; /* Adjust this value to match the height of the font in the code editor */
+      }
+
+      .line-numbers pre {
+        margin: 0;
+        line-height: 20px;
+      }
+      #code {
+        flex-grow: 1;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        padding-left: 10px;
+      }
+      input[type="submit"],
+      button {
+        background-color: #4caf50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      input[type="submit"]:hover,
+      button:hover {
+        background-color: #45a049;
+      }
+      .output {
+        padding: 20px;
+        white-space: pre-wrap; /* This will preserve line breaks and spaces in the output */
+        font-family: monospace; /* Use a monospace font to maintain alignment */
+      }
+      .question-dropdown {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+      }
+
+      /* Add animation for blinking */
+      @keyframes blink {
+        0% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+
+      .output.loading {
+        font-size: 20px; /* Increase font size for loading message */
+        animation: blink 1.5s infinite; /* Blink animation */
+      }
+      .image-container {
+        width: 500px; /* Adjust as needed */
+        height: 200px; /* Adjust as needed */
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
